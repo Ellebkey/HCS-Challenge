@@ -1,0 +1,47 @@
+{
+  "name": "challenge-hcs",
+  "version": "1.0.0",
+  "description": "TypeScript + Mongoose + MongoDB",
+  "author": "hello@joelbarranco.io",
+  "scripts": {
+    "start": "npm run build && cross-env NODE_ENV=production node dist/server.js",
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "test": "mocha -r ts-node/register tests/**/*.ts --timeout 10000"
+  },
+  "dependencies": {
+    "@types/date-fns": "^2.6.0",
+    "cross-env": "^7.0.3",
+    "csv-parser": "^3.0.0",
+    "date-fns": "^2.24.0",
+    "dotenv": "^8.2.0",
+    "joi": "14.3.1",
+    "mongoose": "^5.10.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.15",
+    "@types/csv-parse": "^1.2.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/joi": "^14.3.4",
+    "@types/mocha": "^8.2.1",
+    "@types/mongoose": "^5.10.1",
+    "@types/node": "^16.0.1",
+    "@types/winston": "^2.4.4",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "chai": "^4.3.4",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "lint-staged": "^11.0.0",
+    "mocha": "^8.3.2",
+    "node-config": "^0.0.2",
+    "node-gyp": "^8.1.0",
+    "nodemon": "^2.0.9",
+    "prettier": "^2.3.2",
+    "tsconfig-paths": "^3.10.1"
+  }
+}
